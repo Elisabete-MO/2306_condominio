@@ -1,5 +1,7 @@
 // udar cor de fundo do header quando o scrool for acionado
 const header = document.querySelector('.site-header');
+const thumbnails = document.querySelectorAll('.thumbnail');
+const overlays = document.querySelectorAll('.overlay');
 
 window.addEventListener('scroll', function() {
   const scrolled = window.scrollY > 0; // Verifica se o scroll vertical ocorreu
@@ -9,6 +11,18 @@ window.addEventListener('scroll', function() {
   } else {
     header.style.backgroundImage = ''; // Reverte para a cor de fundo padrão quando o scroll é resetado
   }
+});
+
+thumbnails.forEach(function(thumbnail, index) {
+  thumbnail.addEventListener('click', function() {
+    overlays[index].style.display = 'flex';
+  });
+});
+
+overlays.forEach(function(overlay) {
+  overlay.addEventListener('click', function() {
+    overlay.style.display = 'none';
+  });
 });
 
 // // validação do botão enviar:

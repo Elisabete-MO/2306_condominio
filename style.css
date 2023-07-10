@@ -72,14 +72,23 @@ h2 {
 }
 
 h3 {
+  font-size: 3.2vh;
   color: black;
+}
+li {
+  text-align: left;
 }
 
 p, li {
   color: black;
+  font-size: 3vh;
   font-weight: 400;
   letter-spacing: 0.03em;
   padding: 1%;
+}
+
+ul {
+  padding-left: 2%;
 }
 
 a, label {
@@ -111,6 +120,9 @@ main {
   main {
     margin-top: 48%;
   }
+  #about {
+    flex-direction: column;
+  }
 }
 
 section {
@@ -123,12 +135,12 @@ section {
   text-align: center;
 }
 
-#apresentacao, .contact {
+#apresentacao , .contact {
   background: linear-gradient(45deg, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, .1) 100%);
   width: 80%;
 }
 
-.about, .plantas {
+.about , .plantas {
   background-color: white;
   width: auto;
 }
@@ -186,6 +198,55 @@ input , select {
   font-size: 14px;
   text-shadow: 3px 3px 15px rgba(255, 255, 255, 0.445);
 } */
+
+.grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+}
+
+.thumbnail {
+  align-content: space-between;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(100, 100, 100);
+  cursor: pointer;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0.5vw;
+  min-width: 90px;
+  width: 18%;
+}
+
+.thumbnail:hover {
+  box-shadow: 0 0 5px 5px rgb(191, 191, 191);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.larger-image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
 
 footer {
   background: linear-gradient(45deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .6) 100%);
