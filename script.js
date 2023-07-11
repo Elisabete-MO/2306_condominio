@@ -19,9 +19,9 @@ thumbnails.forEach(function(thumbnail, index) {
   });
 });
 
-overlays.forEach(function(overlay) {
+overlays.forEach(function(overlay, index) {
   overlay.addEventListener('click', function() {
-    overlay.style.display = 'none';
+    overlays[index].style.display = 'none';
   });
 });
 
