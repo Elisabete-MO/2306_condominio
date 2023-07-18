@@ -126,8 +126,8 @@ main {
 }
 
 section {
-  border: solid 2px yellow;
   align-items: center;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   margin: 1% 0 1% 0;
@@ -205,29 +205,25 @@ input , select {
 }
 
 .container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 50%;
-}
-
-.thumbnail {
-  align-content: space-between;
   background-color: rgb(255, 255, 255, 0.8);
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(100, 100, 100);
   cursor: pointer;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   margin: 0.5vw;
   min-width: 90px;
-  width: 30%;
+  position: relative;
+  width: 20%;
 }
 
-.thumbnail:hover {
-  box-shadow: 0 0 5px 5px rgb(191, 191, 191);
+.container:hover {
+  box-shadow: rgb(150, 150, 150) 0 5px 15px 8px;
+}
+
+.container img {
+  height: 100%;
+  width: 100%
 }
 
 .overlay {
