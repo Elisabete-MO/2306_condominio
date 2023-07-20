@@ -2,7 +2,7 @@ body {
   background-attachment: fixed;
   background-image: linear-gradient(45deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .1)), url('./images/vista.jpeg');
   background-size: cover;
-  color: rgb(233, 233, 233); 
+  color: rgb(92, 81, 81); 
   display: grid; 
   font-family: sans-serif;
   font-weight: 800;
@@ -71,6 +71,7 @@ h3 {
   font-size: 3.2vh;
   color: black;
 }
+
 li {
   text-align: left;
 }
@@ -179,13 +180,12 @@ input , select {
   border-radius: 7px;
   box-shadow: 0 0 26px rgba(59, 59, 59, 0.8);
   color: #003be5;
-  font-family: 'Jura';
-  font-size: 14px;
+  /* font-size: 14px; */
   height: 28px;
   line-height: 20px;
   margin: 8px;
   text-align: center;
-  width: 80%;
+  width: 90%;
 }
 
 .grid {
@@ -226,6 +226,24 @@ input , select {
   top: 0;
   width: 100%;
   z-index: 9999; 
+}
+
+.form-container {
+  display: flex;
+  width: 80%;
+}
+
+.form-container label {
+  display: block;
+  text-align: left;
+  width: 90%;
+}
+
+#contact-form {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
 }
 
 .larger-image {
