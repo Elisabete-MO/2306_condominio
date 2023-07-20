@@ -89,7 +89,7 @@ ul {
 }
 
 a, label {
-  color: rgb(233, 233, 233);  
+  color: rgb(233, 233, 233);
   text-decoration: none;
 }
 
@@ -162,13 +162,13 @@ section {
   background: rgba(184, 167, 167, 0.8);
   box-shadow: 0 0 26px rgba(0, 0, 0, 0.8);
   color: rgb(233, 233, 233);  
-  font-size: 3.6vh;
+  font-size: 4vh;
   font-weight: 500;
   letter-spacing: 0.03em;
   margin: 1%;
-  padding: 1%;
+  padding: 2%;
   transition: all 0.3s ease-in-out 0s;
-  width: 50%; 
+  width: 55%; 
 }
 
 .button:hover {
@@ -180,10 +180,10 @@ input , select {
   border-radius: 7px;
   box-shadow: 0 0 26px rgba(59, 59, 59, 0.8);
   color: #003be5;
-  /* font-size: 14px; */
+  font-size: 2.8vh;
   height: 28px;
   line-height: 20px;
-  margin: 8px;
+  margin: 1vh 0 3vh;
   text-align: center;
   width: 90%;
 }
@@ -235,6 +235,8 @@ input , select {
 
 .form-container label {
   display: block;
+  font-size: 2.8vh;
+  padding-top: 1vh;
   text-align: left;
   width: 90%;
 }
