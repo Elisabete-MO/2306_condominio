@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">  REVISAR -->
     <link rel="stylesheet" href="style.css">
-    <title>Condomínio SEU NOME AQUI</title>
+    <title>Edificio Fiaccadori</title>
 </head>
 <body>
     <header class="site-header">
         <div id="header-title">
-        <!-- <img src="images/header-logo.svg" id="header-logo" alt="Condominio SEU NOME AQUI"> REVISAR -->
             <a href="#" >
-                <h1>Condomínio SEU NOME AQUI</h1>
+                <h1>Edificio Fiaccadori</h1>
             </a>
         </div>
         <nav id="header-nav">
-            <a href="#anc-about">Empreendimento</a>
-            <a href="#anc-planta">Plantas</a>
-            <a href="#anc-local">Localização</a>
-            <a href="#anc-realiza">Realização</a>
-            <a href="#anc-contact">Contato</a>
+            <a href="#anc-about" class="scroll-link">Empreendimento</a>
+            <a href="#anc-planta" class="scroll-link">Plantas</a>
+            <a href="#anc-local" class="scroll-link">Localização</a>
+            <a href="#anc-contact" class="scroll-link">Contato</a>
         </nav>
     </header>
     
@@ -30,11 +27,18 @@
             <!-- <img src="" alt="Contato por Whatsapp (11)XXXXX-XXXX"> -->
             <h1>Apartamentos com 47m² e XXvagas de garagem </h1>
             <h2>Obras em fase final</h2>
-            <a href="#anc-contact" class="button">REALIZE SEU SONHO</a>
+            <a href="#anc-contact" class="scroll-link button">REALIZE SEU SONHO</a>
         </section>
-
-        <section class="about" >
-            <h2>Conheça o Empreendimento SEU NOME AQUI</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="anc-about" class="about">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Conheça o Empreendimento</h2>
             <div id="about">
                 <div>
                     <ul>
@@ -58,31 +62,54 @@
                 </div>
             </div>
         </section>
+        <section id="anc-planta" class="plantas">
+            <br>
 
-        <section class="plantas">
+            <br>
+            <br>
+            <br>
             <h3>Apartamentos de X e XX</h3>
             <div class="grid">
-                <img class="img" src="./images/planta1.jpeg" alt="Planta 1">
-                <img class="img" src="./images/planta2.jpeg" alt="Planta 2">
+                <div class="container">
+                    <img class="thumbnail" src="./images/planta1.jpeg" alt="Planta 1">
+                    <div class="overlay">
+                        <img class="larger-image" src="./images/planta1.jpeg" alt="Planta 1">
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="thumbnail" src="./images/planta2.jpeg" alt="Planta 2">
+                    <div class="overlay">
+                        <img class="larger-image" src="./images/planta2.jpeg" alt="Planta 2">
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="local">
-            <p> 
+        
+        <section class="local" id="anc-local">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3> 
                 Proximo a escolas, posto de saúde, centro de Artur Alvim.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at nunc laoreet, venenatis enim in, fermentum quam. Etiam massa sapien, hendrerit rhoncus interdum in, pretium id nisl. Aliquam quis libero sit amet lectus ultricies maximus.
-                <br>
-                <br>
-                Visite apartamento decorado ou entre em contato com um de nosso corretores pelo formulário abaixo. Estamos te esperando!
-            </p>
+            </h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8923018637497!2d-46.49458208502263!3d-23.53637568469532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce60cb59c5c17f%3A0x60c8ec58bdf38f39!2sRua%20Henrique%20Jacobs%2C%2086%20-%20Vila%20Nhocun%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003566-010!5e0!3m2!1spt-BR!2sbr!4v1689882973170!5m2!1spt-BR!2sbr" 
+                width="600" 
+                height="450" 
+                allowfullscreen="true"
+                loading="lazy" 
+                aria-hidden="false"
+                tabindex="0"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
-
-        <section class="realize">
-            <h3>Realização</h3>
-            <!-- <img src="" alt="Empreendedora"> -->
-            <!-- <img src="" alt="Construtora"> -->
-        </section>
-
-        <section class="contact">
+        
+        <section id="anc-contact" class="contact">
+            <br>
+            <br>
+            <br>
+            <br>
             <h2>Entre em contato com um de nossos corretores</h2>
             <div class="form-container">
                 <!-- <img class="" src=""> -->
@@ -93,18 +120,18 @@
                     <label>Email:</label>
                     <input type="email" class="input" name="input-email" placeholder="seu_email@exemplo.com" required>
                     <br>
-                    <label>telefone:</label>
-                    <input type="tel" class="input" id="input-phone" placeholder="(XX) XXXXX-XXXX" required>
+                    <label>Telefone:</label>
+                    <input type="tel" class="input" id="input-phone" placeholder="(99) 99999-9999" required>
                     <br>
-                    <a href="#anc-contact" class="button">SOLICITAR CONTATO</a>
-                    <!-- <input type="submit" value="contact" class="button" onclick="validateFormSubmit()"> -->
+                    <a class="button">SOLICITAR CONTATO</a>
+<!--                     <input type="submit" value="contact" class="button" onclick="validateFormSubmit()">-->
                 </form>
             </div>
         </section>
     </main>
     
     <footer class="site-footer">
-        <span>2023 © Condominio SEU NOME AQUI - Todos os direitos reservados - CNPJ: XX.XXX.XX/0001-XX</span>
+        <span>2023 © Edificio Fiaccadori - Todos os direitos reservados - CNPJ: XX.XXX.XX/0001-XX</span>
         <br>
         <span style='font-weight: 300; font-size: small;'>
             <a href="https://www.linkedin.com/in/elisabete-martinsdeoliveira/" target="_blank"> 
